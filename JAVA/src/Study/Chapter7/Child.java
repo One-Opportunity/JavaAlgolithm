@@ -6,5 +6,6 @@ public class Child extends Parent{
 	}
 	public void method3() {
 		System.out.println("자식의 매써드3");
+		System.out.println();
 	}
 }
