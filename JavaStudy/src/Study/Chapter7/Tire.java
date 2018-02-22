@@ -6,13 +6,14 @@ public class Tire {
 	public String location;
 	public String company;
 	public Tire(String location, int maxRotation) {
-		this(location, maxRotation, "기초타이어" );
-	}
-	public Tire(String location, int maxRotation, String company) {
 		this.location = location;
 		this.maxRotation = maxRotation;
-		this.company = company;
 	}
+//	public Tire(String location, int maxRotation, String company) {
+//		this.location = location;
+//		this.maxRotation = maxRotation;
+//		this.company = company;
+//	}
 	
 	public boolean roll() {
 		++accumulatedRotation;

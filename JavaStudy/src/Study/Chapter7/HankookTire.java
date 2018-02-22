@@ -4,9 +4,7 @@ public class HankookTire extends Tire {
 	public HankookTire(String location, int maxRotation) {
 		super(location, maxRotation);
 	}
-	public HankookTire(String location, int maxRotation, String company) {
-		super(location, maxRotation, "한국타이어");
-	}
+	
 	@Override
 	public boolean roll() {
 		++accumulatedRotation;

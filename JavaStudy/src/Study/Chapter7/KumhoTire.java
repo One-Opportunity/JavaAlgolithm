@@ -1,11 +1,9 @@
 package Study.Chapter7;
 
 public class KumhoTire extends Tire {
+	
 	public KumhoTire(String location, int maxRotation) {
 		super(location, maxRotation);
-	}
-	public KumhoTire(String location, int maxRotation, String company) {
-		super(location, maxRotation, "금호타이어");
 	}
 
 	@Override

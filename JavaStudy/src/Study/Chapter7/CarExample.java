@@ -7,13 +7,13 @@ public class CarExample {
 		for(int i = 1; i <= 8; i++) {
 			int problenLocation = car.run();
 			
-			if (problenLocation == 1 || problenLocation == 2) {
-				System.out.println(car.tires[problenLocation-1].location + car.tires[problenLocation-1].company + "로 교체");
-				car.tires[problenLocation-1] = new KumhoTire(car.tires[problenLocation-1].location, 1888888, car.tires[problenLocation-1].company);
+			if (problenLocation == car.FRONT_LEFT_TIRE || problenLocation == car.FRONT_RIGHT_TIRE) {
+				System.out.println(car.tires[problenLocation].location + "금호타이어로 교체");
+				car.tires[problenLocation] = new KumhoTire(car.tires[problenLocation].location, 1888888);
 				
-			} else if (problenLocation == 3 || problenLocation == 4) {
-				System.out.println(car.tires[problenLocation-1].location + car.tires[problenLocation-1].company + "로 교체");
-				car.tires[problenLocation-1] = new HankookTire(car.tires[problenLocation-1].location, 13333, car.tires[problenLocation-1].company);
+			} else if (problenLocation == car.BACK_LEFT_TIRE || problenLocation == car.BACK_RIGHT_TIRE) {
+				System.out.println(car.tires[problenLocation].location  + "한국타이어로 교체");
+				car.tires[problenLocation] = new HankookTire(car.tires[problenLocation].location, 13333);
 				
 			}
 			System.out.println("------------------------------");
