@@ -11,10 +11,8 @@ public class ChildExample {
 		p.field2 = "data2";
 		p.method3();
 		*/
-		
-		Child child = (Child) p;
+		Child child = (Child)p;
 		child.field2 = "yyy";
 		child.method3();
 	}
-
 }
