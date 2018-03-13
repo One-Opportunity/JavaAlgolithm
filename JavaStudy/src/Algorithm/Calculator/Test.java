@@ -1,5 +1,4 @@
 package Algorithm.Calculator;
-
 import java.util.Stack;
 
 public class Test {
